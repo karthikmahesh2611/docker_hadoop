@@ -1,0 +1,59 @@
+<!--Thu Aug 15 20:47:13 2013-->
+<configuration>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>/var/lib/hadoop-hdfs</value>
+  </property>
+    <property>
+    <name>dfs.namenode.http-address</name>
+    <value>TODO-NAMENODE-HOSTNAME:50070</value>
+  </property>
+ <property>
+     <name>dfs.namenode.rpc-address</name>
+     <value>TODO-NAMENODE-HOSTNAME:8020</value>
+ </property>
+
+ <property>
+     <name>dfs.namenode.https-address</name>
+     <value>TODO-NAMENODE-HOSTNAME:50470</value>
+ </property>
+
+  <property>
+    <name>dfs.datanode.ipc.address</name>
+    <value>0.0.0.0:8010</value>
+  </property>
+    <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>/var/lib/hadoop-hdfs</value>
+  </property>
+    <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
+    <property>
+    <name>dfs.block.local-path-access.user</name>
+    <value>hbase</value>
+  </property>
+    <property>
+    <name>dfs.datanode.address</name>
+    <value>0.0.0.0:50010</value>
+  </property>
+    <property>
+    <name>dfs.datanode.http.address</name>
+    <value>0.0.0.0:50075</value>
+  </property>
+    <property>
+    <name>dfs.permissions.superusergroup</name>
+    <value>hdfs</value>
+  </property>
+    <property>
+    <name>dfs.namenode.safemode.threshold-pct</name>
+    <value>1.0f</value>
+  </property>
+    <property>
+    <name>dfs.domain.socket.path</name>
+    <value>/var/lib/hadoop-hdfs/dn_socket</value>
+  </property>
+
+</configuration>
+

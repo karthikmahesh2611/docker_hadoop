@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "OK: disks ok,containerexecutor ok,"
+exit 0

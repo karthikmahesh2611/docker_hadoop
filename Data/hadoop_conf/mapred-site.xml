@@ -1,0 +1,176 @@
+<configuration>
+
+ <property>
+    <name>mapreduce.jobhistory.address</name>
+    <value>127.0.0.1:10020</value>
+  </property>
+
+    <property>
+    <name>mapreduce.tasktracker.healthchecker.script.path</name>
+    <value>file:////mapred/jobstatus</value>
+  </property>
+
+    <property>
+    <name>yarn.app.mapreduce.am.staging-dir</name>
+    <value>/user</value>
+  </property>
+
+    <property>
+    <name>mapred.task.tracker.task-controller</name>
+    <value>org.apache.hadoop.mapred.DefaultTaskController</value>
+  </property>
+
+  <property>
+    <name>mapreduce.jobhistory.intermediate-done-dir</name>
+    <value>/mr-history/tmp</value>
+  </property>
+
+    <property>
+    <name>mapreduce.output.fileoutputformat.compress.type</name>
+    <value>BLOCK</value>
+  </property>
+
+
+  <property>
+    <name>mapreduce.map.sort.spill.percent</name>
+    <value>0.1</value>
+  </property>
+
+    <property>
+    <name>mapreduce.jobhistory.done-dir</name>
+    <value>/mr-history/done</value>
+  </property>
+
+  <property>
+    <name>mapreduce.shuffle.port</name>
+    <value>8081</value>
+  </property>
+
+    <property>
+    <name>mapreduce.jobhistory.webapp.address</name>
+    <value>127.0.0.1:19888</value>
+  </property>
+
+    <property>
+    <name>mapreduce.map.speculative</name>
+    <value>false</value>
+  </property>
+
+    <property>
+    <name>mapred.jobtracker.taskScheduler</name>
+    <value>org.apache.hadoop.mapred.CapacityTaskScheduler</value>
+  </property>
+
+    <property>
+    <name>mapreduce.jobtracker.system.dir</name>
+    <value>/mapred/system</value>
+  </property>
+
+    <property>
+    <name>mapreduce.jobtracker.tasktracker.maxblacklists</name>
+    <value>16</value>
+  </property>
+
+    <property>
+    <name>mapreduce.reduce.shuffle.input.buffer.percent</name>
+    <value>0.7</value>
+  </property>
+
+  <property>
+    <name>mapreduce.reduce.shuffle.merge.percent</name>
+    <value>0.66</value>
+  </property>
+
+    <property>
+    <name>mapred.jobtracker.maxtasks.per.job</name>
+    <value>-1</value>
+  </property>
+
+    <property>
+    <name>mapreduce.job.reduce.slowstart.completedmaps</name>
+    <value>0.05</value>
+  </property>
+
+    <property>
+    <name>mapreduce.tasktracker.healthchecker.script.timeout</name>
+    <value>60000</value>
+  </property>
+
+    <property>
+    <name>mapreduce.reduce.input.limit</name>
+    <value>10737418240</value>
+  </property>
+
+    <property>
+    <name>mapreduce.reduce.shuffle.parallelcopies</name>
+    <value>30</value>
+  </property>
+
+    <property>
+    <name>mapreduce.tasktracker.map.tasks.maximum</name>
+    <value>4</value>
+  </property>
+
+    <property>
+    <name>mapred.userlog.retain.hours</name>
+    <value>24</value>
+  </property> 
+
+    <property>
+    <name>mapreduce.map.memory.mb</name>
+    <value>{{mapreduce_map_memory_mb}}</value>
+  </property>
+
+  <property>
+    <name>mapreduce.map.java.opts</name>
+    <value>-Xmx{{mapreduce_map_java_opts}}m</value>
+  </property>
+
+    <property>
+    <name>mapreduce.reduce.memory.mb</name>
+    <value>{{mapreduce_reduce_memory_mb}}</value>
+  </property>
+
+  <property>
+    <name>mapreduce.reduce.java.opts</name>
+    <value>-Xmx{{mapreduce_reduce_java_opts}}m</value>
+  </property>
+
+<property>
+     <name>yarn.app.mapreduce.am.resource.mb</name>
+     <value>{{yarn_app_mapreduce_am_resource_mb}}</value>
+</property>
+<property>
+     <name>yarn.app.mapreduce.am.command-opts</name>
+     <value>-Xmx{{yarn_app_mapreduce_am_command_opts}}m</value>
+</property>
+
+    <property>
+    <name>mapreduce.task.io.sort.mb</name>
+    <value>{{mapreduce_task_io_sort_mb}}</value>
+  </property>
+
+ <property>
+     <name>mapreduce.admin.user.env</name>
+     <value>LD_LIBRARY_PATH=/usr/hdp/2.6.5.0-292/hadoop/lib/native:/usr/hdp/2.6.5.0-292/hadoop/lib/native/Linux-amd64-64</value>
+</property>
+
+<property>
+     <name>mapreduce.application.framework.path</name>
+     <value>/hdp/apps/2.6.5.0-292/mapreduce/mapreduce.tar.gz#mr-framework</value>
+</property>
+
+<property>
+    <name>mapreduce.application.classpath</name>
+    <value>$PWD/mr-framework/hadoop/share/hadoop/mapreduce/*:$PWD/mr-framework/hadoop/share/hadoop/mapreduce/lib/*:$PWD/mr-framework/hadoop/share/hadoop/common/*:$PWD/mr-framework/hadoop/share/hadoop/common/lib/*:$PWD/mr-framework/hadoop/share/hadoop/yarn/*:$PWD/mr-framework/hadoop/share/hadoop/yarn/lib/*:$PWD/mr-framework/hadoop/share/hadoop/hdfs/*:$PWD/mr-framework/hadoop/share/hadoop/hdfs/lib/*:/usr/hdp/2.6.5.0-292/hadoop/lib/snappy-java-1.0.4.1.jar:/etc/hadoop/conf/secure</value>
+</property>
+
+ <property>
+     <name>mapreduce.admin.map.child.java.opts</name>
+     <value>-server -Djava.net.preferIPv4Stack=true -Dhdp.version=2.6.5.0-292</value>
+     <final>true</final>
+</property>
+
+</configuration>
+
+
