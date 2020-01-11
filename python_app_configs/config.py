@@ -2,7 +2,7 @@ import os
 
 ####################Base configs###############################
 
-docker_image_dir=['theitnoob-centosbase','theitnoob-java','theitnoob-hdp2.6.5','theitnoob-kafka','theitnoob-zookeeper','theitnoob-hadoopclient']
+docker_image_dir=['kmahesh2611/centosbase','kmahesh2611/java','kmahesh2611/hdp2.6.5','kmahesh2611/kafka','kmahesh2611/zookeeper','kmahesh2611/hadoopclient']
 hadoop_network_range = '10.0.5.0'
 domain_name = 'theitnoob.com'
 dest_dir = os.path.join(os.getcwd(),'bind_mounts')

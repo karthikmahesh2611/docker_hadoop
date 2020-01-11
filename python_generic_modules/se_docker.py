@@ -10,17 +10,14 @@ dkr_socket = docker.from_env()
 
 
 def build_images():
-	for dir_name in config.docker_image_dir:
-		dir_path = os.path.join(config.docker_file_dir,dir_name)
-		print('Dockerfile path: ' + dir_path)
-		img_name = 'kmahesh2611/' + dir_name.split('-')[1]
+	for img_name in config.docker_image_dir:
 		if dkr_socket.images.list(name=str(img_name)):
 			print("Docker image '{}' already exists\n================\n".format(img_name))
 		else:
 			try:
 				print("Building image {}:latest".format(img_name))
 				print("Wait..")
-				dkr_socket.images.build(tag=str(img_name) + ':latest',path=dir_path,rm='yes')
+				dkr_socket.images.pull(img_name,tag='latest')
 			except Exception as error:
 				print("Image Build failed for '{}' due to error: {}\n================\n".format(img_name,error))
 			else:

@@ -49,6 +49,7 @@ def clear_docker_env():
 parser = argparse.ArgumentParser()
 parser.add_argument("--start", help="Start Hadoop Containers", action="store_true")
 parser.add_argument("--stop", help="Stop and Delete Hadoop Containers", action="store_true")
+parser.add_argument("--pull", help="Pull Required docker images", action="store_true")
 
 args = parser.parse_args()
 
@@ -60,8 +61,9 @@ if __name__ == "__main__":
 		print('=====HADOOP CONTANIERS ARE LAUNCHED=====\n')
 		time.sleep(4)
 	elif (args.stop):
-		os.system('clear')
 		clear_docker_env()
+	elif (args.pull):
+		se_docker.build_images()
 	else:
 		print('Invalid Argument!!')
 		print('See ')
