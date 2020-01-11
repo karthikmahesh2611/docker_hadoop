@@ -15,13 +15,13 @@ def build_images():
 			print("Docker image '{}' already exists\n================\n".format(img_name))
 		else:
 			try:
-				print("Building image {}:latest".format(img_name))
+				print("Pulling image {}:latest".format(img_name))
 				print("Wait..")
 				dkr_socket.images.pull(img_name,tag='latest')
 			except Exception as error:
-				print("Image Build failed for '{}' due to error: {}\n================\n".format(img_name,error))
+				print("Image Pull failed for '{}' due to error: {}\n================\n".format(img_name,error))
 			else:
-				print("Build successful for '{}'\n================\n".format(img_name))
+				print("Pull successful for '{}'\n================\n".format(img_name))
 
 
 def del_images():
