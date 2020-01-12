@@ -10,6 +10,7 @@ sudo yum install -y python34
 sudo yum install -y python34-pip
 
 
+
 ##Install python docker library
 sudo pip3.4 install docker
 sudo pip3.4 install jinja2
@@ -19,9 +20,6 @@ sudo pip3.4 install phoenixdb
 sudo systemctl start docker
 sudo systemctl enable docker
 sleep 5
-
-##Setup Bind Mount Directory##
-mkdir ./bind_mounts
 
 ##Verification
 echo "RUN VERIFICATIONS"
