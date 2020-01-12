@@ -13,6 +13,7 @@
 * This is a python3 script to help developers setup a local Hadoop development docker cluster setup on their Linux workstation.
 * Includes **HDFS, YARN, Spark2, HBase and Apache Phoenix** with full cluster setup having master and slave nodes.
 * The folder **'bind_mounts'** is used to share code from your local workstation into the docker environment for integrated testing.
+* The Hadoop setup currently uses the **Hortonworks Data Platform (HDP) verion HDP 2.6.5**
 * Has been tested on Centos7 work station 
 
 ------
