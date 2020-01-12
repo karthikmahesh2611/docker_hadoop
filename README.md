@@ -37,7 +37,9 @@
    #python3.4 startup_script.py --help
    ```
 
-   ![](.\screenshots\script_options_screenshot.png)
+   <img src=".\screenshots\script_options_screenshot.png" style="zoom:80%;" />
+
+   
 
 4. Next pull the required Docker images using the --pull option.
 
@@ -45,7 +47,7 @@
    #python3.4 startup_script.py --pull
    ```
 
-   ![](.\screenshots\image_pull_screenshot.png)
+   <img src=".\screenshots\image_pull_screenshot.png" style="zoom:80%;" />
 
 5. Once the images are pulled you can start the docker containers using the --start option.
 
@@ -53,7 +55,7 @@
    #python3.4 startup_script.py --pull
    ```
 
-   ![](E:\virtualbox_shared_folder\docker_share\docker_hadoop\screenshots\startup_screenshot.png)
+   <img src="E:\virtualbox_shared_folder\docker_share\docker_hadoop\screenshots\startup_screenshot.png" style="zoom:80%;" />
 
 
 
@@ -77,7 +79,7 @@ Hadoop Links and ports  ==>
 
 ##### HDFS
 
-![](.\screenshots\hdfs_screenshot2.png)
+<img src=".\screenshots\hdfs_screenshot2.png" style="zoom:80%;" />
 
 **Note:** *That since all the docker containers are running on the same host they falsely assume as the net availbale hard disk space as 16 GB each whereas it is overall 16 GB only. This is one side effect of simulating the hadoop docker cluster on a single host.*
 
@@ -85,15 +87,15 @@ Hadoop Links and ports  ==>
 
 ##### YARN
 
-![](.\screenshots\yarn_screenshot.png)
+<img src=".\screenshots\yarn_screenshot.png" style="zoom:80%;" />
 
 ##### HBASE
 
-![](.\screenshots\hbase_screenshot.png)
+<img src=".\screenshots\hbase_screenshot.png" style="zoom:80%;" />
 
 ##### SPARK HISTORY SERVER
 
-![](.\screenshots\spark_screenshot.png)
+<img src=".\screenshots\spark_screenshot.png" style="zoom:80%;" />
 
 ##### APACHE PHOENIX SHELL
 
@@ -138,7 +140,7 @@ Hadoop Links and ports  ==>
   #python /usr/hdp/2.6.5.0-292/phoenix/bin/sqlline-thin.py 127.0.0.1:8765
   ```
 
-  ![](.\screenshots\phoenix_screenshot.png)
+  <img src=".\screenshots\phoenix_screenshot.png" style="zoom:150%;" />
 
 
 
