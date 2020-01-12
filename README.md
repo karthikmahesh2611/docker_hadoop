@@ -52,10 +52,10 @@
 5. Once the images are pulled you can start the docker containers using the --start option.
 
    ```
-   #python3.4 startup_script.py --pull
+   #python3.4 startup_script.py --start
    ```
 
-   <img src="E:\virtualbox_shared_folder\docker_share\docker_hadoop\screenshots\startup_screenshot.png" style="zoom:80%;" />
+   <img src="E:\virtualbox_shared_folder\docker_share\docker_hadoop\screenshots\startup_screenshot.png" style="zoom: 150%;" />
 
 
 
