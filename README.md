@@ -1,5 +1,6 @@
 # Contents
 
+<<<<<<< HEAD
 1. [About the Script](#about-the-script)
 
 2. [Usage](#usage)
