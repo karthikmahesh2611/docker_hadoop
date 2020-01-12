@@ -55,7 +55,7 @@
    #python3.4 startup_script.py --start
    ```
 
-   <img src="E:\virtualbox_shared_folder\docker_share\docker_hadoop\screenshots\startup_screenshot.png" style="zoom: 150%;" />
+   <img src=".\screenshots\startup_screenshot.png" style="zoom: 150%;" />
 
 
 
