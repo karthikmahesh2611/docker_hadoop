@@ -20,16 +20,24 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sleep 5
 
-##Make Directories
-mkdir ~/se_bind_mounts
-mkdir ~/se_log_dir
-
 ##Verification
 echo "RUN VERIFICATIONS"
 
-echo -e "\\n4)Check if Docker deamon is installed & running"
+echo -e "\\n1)Check if Docker deamon is installed & running"
 echo -e "=============="
 echo -e "\\n`docker version`"
+echo -e "=============="
+echo -e "\\n2)Check if python3.4 installed"
+echo -e "=============="
+echo -e "\\n`python3.4 --version`"
+echo -e "=============="
+echo -e "\\n3)Check if pip3.4 is installed"
+echo -e "=============="
+echo -e "\\n`pip3.4 --version`"
+echo -e "=============="
+echo -e "\\n4)Check if the python packages 'docker','jinja2' and 'phoenixdb' are present in the below list"
+echo -e "=============="
+echo -e "\\n`pip3.4 list`"
 echo -e "=============="
 
 
