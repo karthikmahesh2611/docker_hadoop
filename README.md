@@ -1,6 +1,5 @@
 # Contents
 
-<<<<<<< HEAD
 1. [About the Script](#about-the-script)
 
 2. [Usage](#usage)
@@ -29,8 +28,8 @@
    ```
 
    <img src=".\screenshots\initial_setup_screenshot.png" style="zoom:80%;" />
-
-<img src=".\screenshots\verification_screenshots.png" style="zoom:67%;" />
+   
+   <img src=".\screenshots\verification_screenshots.png" style="zoom:67%;" />
 
 3. Now the python script should be ready for use and you can see available options using the --help option.
 
