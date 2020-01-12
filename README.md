@@ -1,12 +1,14 @@
-#Contents
+# Contents
 
-* [About the Script](#about-the-script)
-* [Usage](usage)
-* [Hadoop Environment](hadoop-environment)
+1. [About the Script](#about-the-script)
+
+2. [Usage](#usage)
+
+3. [Hadoop Environment](#hadoop-environment)
 
 ------
 
-##About the Script
+### About the Script
 
 * This is a python3 script to help developers setup a local Hadoop development docker cluster setup on their local Linux workstation.
 * Includes **HDFS, YARN, Spark2, HBase, Apache Phoenix** with full cluster setup with master and slave nodes.
@@ -15,7 +17,7 @@
 
 ------
 
-##Usage:
+### Usage
 
 1. Clone the repository on your local Centos machine.
 
@@ -57,7 +59,7 @@
 
 ------
 
-##Hadoop Environment
+### Hadoop Environment
 
 Once the containers are launched you will be able to verify the Hadoop environment using the Hadoop UIs that will be accessible from you host machine as the ports have been forwarded from the docker environment.
 
@@ -73,7 +75,7 @@ Hadoop Links and ports  ==>
 
 
 
-###HDFS
+##### HDFS
 
 ![](.\screenshots\hdfs_screenshot2.png)
 
@@ -81,19 +83,19 @@ Hadoop Links and ports  ==>
 
 
 
-###YARN
+##### YARN
 
 ![](.\screenshots\yarn_screenshot.png)
 
-###HBASE
+##### HBASE
 
 ![](.\screenshots\hbase_screenshot.png)
 
-###SPARK HISTORY SERVER
+##### SPARK HISTORY SERVER
 
 ![](.\screenshots\spark_screenshot.png)
 
-###APACHE PHOENIX SHELL
+##### APACHE PHOENIX SHELL
 
 **Note**: To access the phoenix shell you need to first install the apache phoenix client on your host system.
 
