@@ -20,6 +20,9 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sleep 5
 
+##Setup Bind Mount Directory##
+mkdir ./bind_mounts
+
 ##Verification
 echo "RUN VERIFICATIONS"
 
