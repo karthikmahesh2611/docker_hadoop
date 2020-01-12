@@ -1,8 +1,8 @@
 #Contents
 
 * [About the Script](#about-the-script)
-* [Usage](usage)
-* [Hadoop Environment](hadoop-environment)
+* [Usage](#usage)
+* [Hadoop Environment](#hadoop-environment)
 
 ------
 
